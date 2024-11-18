@@ -7,7 +7,7 @@ class CounterC extends React.Component {
         //this.state.count = 0 it means
         this.increment = this.increment.bind(this)
         this.decrement = this.decrement.bind(this)
-        this.stop = this.stop.bind(this)
+        this.reset = this.reset.bind(this)
     }
     increment() {
         this.setState({ count: this.state.count + 1 })
@@ -15,7 +15,7 @@ class CounterC extends React.Component {
     decrement() {
         this.setState({ count: this.state.count - 1 })
     }
-    stop() {
+    reset() {
         this.setState({ count: 0 })
     }
 
@@ -27,7 +27,7 @@ class CounterC extends React.Component {
                 <h4>Count:{this.state.count}</h4>
                 <button onClick={this.decrement}>-</button>
                 <br /> <br /><br />
-                <button onClick={this.stop}>Stop & Reset</button>
+                <button onClick={this.reset}>Reset</button>
             </div>
         )
     }
