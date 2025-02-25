@@ -20,9 +20,14 @@ import FunctionalCompCount from './FunctionalCompCounter';
 //Functional Counter
 function App() {
   return (
+    
     <div className="App">
+      <div>
+      <h1>Counter Apps</h1>
       <br></br>
-   
+      </div>
+      <br></br>
+ 
       <FunctionalCompCount/>
     </div>
   );
